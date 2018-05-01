@@ -10,6 +10,7 @@
 #import "ScanQRCodeViewController.h"
 #import "GetQRCodeViewController.h"
 #import "ReadQrCodeViewController.h"
+#import "J_ScanQRCodeViewController.h"
 @interface ViewController ()
 
 @end
@@ -22,7 +23,8 @@
 }
 - (IBAction)scanqrcode:(id)sender {
     
-    [self.navigationController pushViewController:[[ScanQRCodeViewController alloc]init] animated:YES];
+//    [self.navigationController pushViewController:[[ScanQRCodeViewController alloc]init] animated:YES];
+    [self.navigationController pushViewController:[[J_ScanQRCodeViewController alloc]init] animated:YES];
 }
 
 - (IBAction)getqrcode:(id)sender {
